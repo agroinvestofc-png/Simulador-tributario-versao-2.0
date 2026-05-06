@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Comparison from "./pages/Comparison";
 import FactorR from "./pages/FactorR";
+import { Analytics } from "@vercel/analytics/react"
 
 
 function Router() {
@@ -34,6 +35,7 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <Router />
+          <Analytics />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
